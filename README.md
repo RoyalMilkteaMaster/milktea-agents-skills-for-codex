@@ -10,6 +10,8 @@
 
 其餘 Skills 由流程或臨時 Agent 按需載入。
 
+首次規劃會自動設定並驗證產品 Repository 的 Issue Tracker；有效設定不重問。
+
 ## 安裝
 
 Windows：
@@ -31,6 +33,6 @@ milktea-agents-army-codex/  # Codex 發行包
 │   └── milktea-agents-army-codex/  # 實際 Plugin
 │       ├── .codex-plugin/           # Codex Plugin 設定
 │       │   └── plugin.json  # Codex Plugin 定義
-│       └── skills/          # 12 個繁體中文 Skills
+│       └── skills/          # 13 個繁體中文 Skills
 └── README.md             # 使用說明
 ```

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Setup Issue Tracker"
+  short_description: "首次設定並驗證專案 Issue Tracker、標籤與阻擋關係"
+  default_prompt: "使用 $milktea-skills-setup-issue-tracker 設定或驗證目前專案的 Issue Tracker。"
+policy:
+  allow_implicit_invocation: true
