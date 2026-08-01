@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Debug"
+  short_description: "診斷並修正執行期間的非預期問題，再返回原 Ticket"
+  default_prompt: "使用 $milktea-skills-debug 重現、定位並修正目前 Ticket 的非預期問題。"
+policy:
+  allow_implicit_invocation: true

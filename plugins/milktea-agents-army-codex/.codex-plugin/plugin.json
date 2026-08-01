@@ -1,0 +1,18 @@
+{
+  "name": "milktea-agents-army-codex",
+  "version": "0.1.0",
+  "description": "給 Codex 使用的繁體中文 AI 開發協作 Skills。",
+  "author": {
+    "name": "Milktea"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Milktea Agents Army for Codex",
+    "shortDescription": "以繁體中文規劃、派工、實作與審查。",
+    "longDescription": "提供需求釐清、架構規劃、規格與 Ticket、協調實作、TDD、Debug、審查及架構健檢流程。",
+    "developerName": "Milktea",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "defaultPrompt": "先使用 $milktea-skills-grill-me 釐清我的需求，再依核准流程執行。"
+  }
+}

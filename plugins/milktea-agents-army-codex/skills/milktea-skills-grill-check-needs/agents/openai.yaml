@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Grill Check Needs"
+  short_description: "逐一確認需求、範圍、流程、限制、術語與完整可驗收結果"
+  default_prompt: "使用 $milktea-skills-grill-check-needs 與我逐一確認這項需求。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Grill Me"
+  short_description: "依序完成需求、架構、可行性、規格、Tickets 與新 Task 交接"
+  default_prompt: "使用 $milktea-skills-grill-me 從需求確認開始，依序完成架構、可行性、規格與 Tickets，經我核准後建立新的執行 Task。"
+policy:
+  allow_implicit_invocation: false

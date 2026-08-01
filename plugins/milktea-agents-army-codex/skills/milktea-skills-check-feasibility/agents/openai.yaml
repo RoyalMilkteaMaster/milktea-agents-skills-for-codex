@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Check Feasibility"
+  short_description: "在寫規格前評估技術、成本、時間、風險與成功機率區間"
+  default_prompt: "使用 $milktea-skills-check-feasibility 評估這項已確認方案的可行性。"
+policy:
+  allow_implicit_invocation: true

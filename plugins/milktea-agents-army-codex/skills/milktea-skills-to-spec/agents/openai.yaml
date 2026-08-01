@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills To Spec"
+  short_description: "將核准需求、架構與可行性整理成可拆票的完整中文規格"
+  default_prompt: "使用 $milktea-skills-to-spec 將已核准的需求、架構與可行性報告整理成中文規格。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Improve Codebase Architecture"
+  short_description: "產生中文 Tailwind 與 Mermaid 架構健檢報告"
+  default_prompt: "使用 $milktea-skills-improve-codebase-architecture 唯讀健檢目前程式庫並產生完整中文 HTML 報告。"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,20 @@
+{
+  "name": "milktea-agents-army-codex",
+  "interface": {
+    "displayName": "Milktea Agents Army for Codex"
+  },
+  "plugins": [
+    {
+      "name": "milktea-agents-army-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/milktea-agents-army-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
