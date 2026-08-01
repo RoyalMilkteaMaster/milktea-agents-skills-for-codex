@@ -6,11 +6,13 @@
 
 - `$milktea-skills-grill-me`：新需求規劃。
 - `$milktea-skills-implement`：接手已核准的 Tickets。
+- `$milktea-skills-check-feasibility`：主動產生獨立可行性報告。
 - `$milktea-skills-improve-codebase-architecture`：主動進行架構健檢。
+- `$milktea-skills-setup-issue-tracker`：明確切換本機或遠端 Tracker。
 
 其餘 Skills 由流程或臨時 Agent 按需載入。
 
-首次規劃會自動設定並驗證產品 Repository 的 Issue Tracker；有效設定不重問。
+Spec 與 Tickets 預設寫入 `docs/work/`，不需要 GitHub、Commit 或 Push。Ticket 核准後，Codex Desktop 會在使用者授權時建立新的執行 Task。
 
 ## 安裝
 
