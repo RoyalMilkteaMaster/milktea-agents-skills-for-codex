@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea Brownfield Refactor Planner"
-  short_description: "盤點既有專案、規劃精簡重構並產生視覺化 HTML 報告"
-  default_prompt: "使用 $milktea-skills-brownfield-refactor-planner 盤點此既有專案，先與我確認清理邊界，再產生可核准的重構 Spec、Tickets 與 HTML 架構報告。"
+  short_description: "先產生架構報告，再由使用者決定是否規劃重構"
+  default_prompt: "使用 $milktea-skills-brownfield-refactor-planner 先盤點此既有專案並產生 HTML 架構報告；等我看完並決定繼續後，才產生重構 Spec 與 Tickets。"
 policy:
   allow_implicit_invocation: false
