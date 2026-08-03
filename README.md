@@ -1,8 +1,10 @@
 # Milktea Agents Army for Codex
 
-這是奶茶流給 Codex 使用的 AI 開發協作 Skills。
+這是皇家奶茶大師給 Claude Code 使用的 AI 開發協作 Skills。
 
-你不需要記住全部 15 個 Skills。平常只要依照目前情況選擇入口，後續需要的規劃、實作、測試與 Review Skills 會由流程接手。
+你會用到的技能只有四個。
+平常你只需要依照你的需求使用技能或是輸入範本。  
+後續需要的規劃、實作、測試與 Review Skills 都會由流程接手。
 
 ## 先選你現在要做的事
 
