@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Set Agent Roles"
+  short_description: "選擇目前 Task 的開發與雙 Reviewer CLI 分工"
+  default_prompt: "使用 $milktea-skills-set-agent-roles 選擇目前 Task 的 Developer 與兩名 Reviewer。"
+policy:
+  allow_implicit_invocation: false

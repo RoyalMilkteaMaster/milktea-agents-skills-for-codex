@@ -1,6 +1,0 @@
-interface:
-  display_name: "Milktea Skills Setup Issue Tracker"
-  short_description: "明確切換本機或遠端 Issue Tracker 模式與操作設定"
-  default_prompt: "使用 $milktea-skills-setup-issue-tracker 明確切換並驗證目前專案的 Tracker 模式。"
-policy:
-  allow_implicit_invocation: false

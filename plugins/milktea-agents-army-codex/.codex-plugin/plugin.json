@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Milktea Agents Army for Codex",
     "shortDescription": "以繁體中文規劃、派工、實作與審查。",
-    "longDescription": "提供需求釐清、架構規劃、本機優先的規格與 Ticket、協調實作、TDD、Debug、審查，以及獨立可行性與架構健檢。",
+    "longDescription": "提供需求釐清、架構規劃、本機優先的規格與 Ticket、既有專案重構規劃與安全實作、協調實作、TDD、Debug、審查，以及獨立可行性與架構健檢。",
     "developerName": "Milktea",
     "category": "Developer Tools",
     "capabilities": [],

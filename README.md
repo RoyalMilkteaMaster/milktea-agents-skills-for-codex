@@ -5,10 +5,11 @@
 ## 入口
 
 - `$milktea-skills-grill-me`：新需求規劃。
+- `$milktea-skills-brownfield-refactor-planner`：盤點並規劃既有專案重構。
 - `$milktea-skills-implement`：接手已核准的 Tickets。
+- `$milktea-skills-set-agent-roles`：設定目前 Task 的 Developer 與雙 Reviewer。
 - `$milktea-skills-check-feasibility`：主動產生獨立可行性報告。
 - `$milktea-skills-improve-codebase-architecture`：主動進行架構健檢。
-- `$milktea-skills-setup-issue-tracker`：明確切換本機或遠端 Tracker。
 
 其餘 Skills 由流程或臨時 Agent 按需載入。
 
@@ -35,6 +36,6 @@ milktea-agents-army-codex/  # Codex 發行包
 │   └── milktea-agents-army-codex/  # 實際 Plugin
 │       ├── .codex-plugin/           # Codex Plugin 設定
 │       │   └── plugin.json  # Codex Plugin 定義
-│       └── skills/          # 13 個繁體中文 Skills
+│       └── skills/          # 15 個繁體中文 Skills
 └── README.md             # 使用說明
 ```
