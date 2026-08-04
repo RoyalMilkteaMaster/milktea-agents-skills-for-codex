@@ -1,14 +1,14 @@
 {
-  "name": "milktea-agents-army-codex",
+  "name": "milktea-agents-skills-for-codex",
   "interface": {
     "displayName": "Milktea Agents Army for Codex"
   },
   "plugins": [
     {
-      "name": "milktea-agents-army-codex",
+      "name": "milktea-agents-skills-for-codex",
       "source": {
         "source": "local",
-        "path": "./plugins/milktea-agents-army-codex"
+        "path": "./plugins/milktea-agents-skills-for-codex"
       },
       "policy": {
         "installation": "AVAILABLE",
