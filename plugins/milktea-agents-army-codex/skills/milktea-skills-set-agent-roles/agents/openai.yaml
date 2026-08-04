@@ -1,6 +1,0 @@
-interface:
-  display_name: "Milktea Skills Set Agent Roles"
-  short_description: "選擇目前 Task 的角色、模型與推理強度"
-  default_prompt: "使用 $milktea-skills-set-agent-roles 選擇目前 Task 的 Developer、兩名 Reviewer、模型與 model_reasoning_effort。"
-policy:
-  allow_implicit_invocation: false
