@@ -181,8 +181,8 @@ $milktea-skills-set-agent-roles
 codex login
 codex login status
 
-codex plugin marketplace add RoyalMilkteaMaster/milktea-agents-army-codex
-codex plugin add milktea-agents-army-codex@milktea-agents-army-codex
+codex plugin marketplace add RoyalMilkteaMaster/milktea-agents-skills-for-codex
+codex plugin add milktea-agents-skills-for-codex@milktea-agents-skills-for-codex
 codex plugin list
 ```
 
@@ -194,8 +194,8 @@ codex plugin list
 codex login
 codex login status
 
-codex plugin marketplace add RoyalMilkteaMaster/milktea-agents-army-codex
-codex plugin add milktea-agents-army-codex@milktea-agents-army-codex
+codex plugin marketplace add RoyalMilkteaMaster/milktea-agents-skills-for-codex
+codex plugin add milktea-agents-skills-for-codex@milktea-agents-skills-for-codex
 codex plugin list
 ```
 
