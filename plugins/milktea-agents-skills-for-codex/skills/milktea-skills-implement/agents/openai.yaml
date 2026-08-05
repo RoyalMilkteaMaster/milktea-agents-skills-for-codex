@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea Skills Implement"
-  short_description: "派發開發與雙 Reviewer，通過三方共識後完成 Ticket"
-  default_prompt: "使用 $milktea-skills-implement 執行已核准 Tickets，派發開發與雙 Reviewer。"
+  short_description: "最大安全並行派發開發與雙 Reviewer，完成三方共識"
+  default_prompt: "使用 $milktea-skills-implement 以最大安全並行執行已核准 Tickets，並完成雙 Reviewer 共識。"
 policy:
   allow_implicit_invocation: false

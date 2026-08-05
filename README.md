@@ -1,8 +1,6 @@
-# Milktea Agents skills for Codex
+# Milktea Agents Skills for Codex
 
 ![Milktea Agents Skills](assets/milktea-agents-skills.png)
-
-## 專案簡介
 
 ## 專案簡介
 
@@ -47,7 +45,7 @@ Grill Me
   ↓
 貼到新的 Codex Task
   ↓
-Implement → Developer 實作 → Reviewer A + Reviewer B 獨立審查
+Implement → 安全並行 Developers → 每票 Reviewer A + Reviewer B 獨立審查
 ```
 
 ### 整理既有專案(brownfield-refactor-planner)
@@ -67,8 +65,10 @@ HTML 架構報告
        ↓
      產生執行交接文字
        ↓
-     貼到新的 Codex Task 執行重構
+     貼到新的 Codex Task，以最大安全並行執行重構
 ```
+
+Implement 會先讀取全部 Tickets，依相依關係、寫入範圍與共享資源鎖建立 Ready Queue，再把互不衝突的 Tickets 同時派給多個 Developer。相同檔案或模組、Schema、Migration、Lockfile、正式 Data／Runtime、GPU、Blender、ComfyUI、全專案測試與 Git 寫入會自動改為串行。
 
 ## 具體操作範本(可以直接複製貼上)
 
@@ -104,7 +104,7 @@ $milktea-skills-grill-me
 
 適合情境:當你面對架構混亂、重複程式增加、舊功能殘留，你想進行清整，或你還不確定這個專案是否值得重構。
 
-它會先呼叫內部的架構健檢 Skill，用唯讀方式盤點現況並產生 HTML 報告。你可以拿到報告就結束；也可以選擇請Agents繼續根據報告，產生重構 Spec 與 Tickets。
+它會先呼叫內部的架構健檢 Skill，用唯讀方式盤點現況並產生詳細 HTML 報告。完成後聊天框只顯示可點擊的 HTML 絕對路徑，以及「只保留報告／繼續進入 to-spec／修改報告」三個選項，不會在聊天框重述整份報告。你可以拿到報告就結束；也可以選擇請 Agents 繼續根據報告產生重構 Spec 與 Tickets。
 
 <details>
 <summary>可直接複製的用法</summary>
@@ -179,35 +179,6 @@ $milktea-skills-set-agent-roles
 
 </details>
 
-### Reviewer B 可選使用 Open Code Review
-
-[Alibaba Open Code Review](https://github.com/alibaba/open-code-review) 是外部開源 CLI，**不是圖片文字辨識 OCR**。Milktea 不會把它包進專案，也不會讓所有 Reviewer 強制使用：
-
-- 預設關閉；Reviewer A 永遠維持原生 Review。
-- 只有 Reviewer B 可選擇 Delegation Mode，讓 OCR 先整理 Git 變更檔案與 Review 規則，再由原本的 Codex／Claude 模型判斷。
-- Delegation Mode 不使用 OCR 自己的 LLM，因此不需要另外提供 OCR API Key。
-- 一般 implement 與 brownfield refactor implement 都支援；小問題不想增加規則內容時保持關閉即可。
-- Windows 與 WSL 分開安裝；Windows CLI 在目前 npm 全域目錄，Linux／WSL CLI 在使用者的 `~/.local`，執行狀態在 `~/.opencodereview/`，不會因安裝而進入 Git 專案。
-
-只有選擇「Reviewer B OCR」時才會進入兩層確認：
-
-1. 是否為 Reviewer B 開啟 OCR，並先解釋功能、資料邊界與 API Key 行為。
-2. 只有已開啟但目前環境沒有可用 `ocr` 時，才再詢問是否安裝；同意後才執行固定版本的 npm 全域安裝並驗證。
-
-安裝前會檢查 OCR 官方需求 Git ≥ 2.41、Node.js ≥ 18 與 npm。Milktea 不會擅自安裝或升級這三個系統工具。拒絕安裝、條件不足或 OCR 執行失敗時，Reviewer B 會安全回退到原生 Review。
-
-<details>
-<summary>可直接複製的測試用法</summary>
-
-```text
-請使用：
-$milktea-skills-set-agent-roles
-
-只調整 Reviewer B OCR。先說明功能與資料邊界；如果本機沒有 OCR，請先說明安裝會寫到哪裡，再經過第二次確認才安裝。完成後立即結束。
-```
-
-</details>
-
 ## 快速開始
 
 請根據您習慣的開發習慣，選擇實際要使用 Codex 的環境，並在同一個環境完成以下所有步驟。
@@ -216,7 +187,13 @@ $milktea-skills-set-agent-roles
 
 ### Windows（新手推薦）
 
-在 PowerShell 執行：
+下載 Codex CLI
+
+```powershell
+npm install -g @openai/codex
+```
+
+在 PowerShell 登入 Codex：
 
 ```powershell
 codex login
@@ -230,6 +207,14 @@ codex plugin list
 ### Linux／WSL（長期開發者推薦）
 
 在 Linux／WSL Terminal 執行：
+
+下載 Codex CLI
+
+```bash
+npm install -g @openai/codex
+```
+
+在 Linux／WSL 登入 Codex：
 
 ```bash
 codex login
@@ -280,3 +265,26 @@ agy
 Antigravity CLI 沒有另外的 `auth login` 指令。第一次執行 `agy` 時會開啟 Google 登入流程；完成後可在 Antigravity CLI 輸入 `/exit` 回到 Terminal。
 
 如果電腦上有兩種以上的 AI CLI，建議全部登入。工作流只會使用目前環境中實際可用的 CLI。
+
+
+### Open Code Review審查助手(可選項、非必要)
+
+[Alibaba Open Code Review](https://github.com/alibaba/open-code-review) 是外部開源 AI 代碼審查助手。
+
+相較於通用型 Agent 審查，Open Code Review 在使用相同底層模型的情況下，展現出更高的準確率（Precision）與 F1 綜合得分。此外，相較於未採用 Open Code Review 的通用 Agent，其 Token 消耗僅約為九分之一，審查速度也更快。
+
+Milktea 不會把它包進專案，也不會讓所有 Reviewer 強制使用。
+
+只有透過：
+
+```text
+$milktea-skills-set-agent-roles
+```
+
+選擇 Reviewer B 開啟 OCR 時，才會進入兩層確認：
+
+1. 是否為 Reviewer B 開啟 OCR，並先解釋功能、資料邊界與 API Key 行為。
+2. 只有已開啟但目前環境沒有可用 `ocr` 時，才再詢問是否安裝；同意後才執行固定版本的 npm 全域安裝並驗證。
+
+安裝前會檢查 OCR 官方需求 Git ≥ 2.41、Node.js ≥ 18 與 npm。Milktea 不會擅自安裝或升級這三個系統工具。
+拒絕安裝、條件不足或 OCR 執行失敗時，Reviewer B 會安全回退到原生 Review。
