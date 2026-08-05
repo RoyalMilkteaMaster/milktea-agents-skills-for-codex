@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea Skills Set Agent Roles"
-  short_description: "快速調整單一環境、角色或 OCR 設定"
-  default_prompt: "使用 $milktea-skills-set-agent-roles，先讓我選這次只調整開發環境、角色設定或 Reviewer B OCR，完成所選項目後立即結束。"
+  short_description: "快速調整環境、角色、Reviewer 開關或 OCR"
+  default_prompt: "使用 $milktea-skills-set-agent-roles，在第一層選單直接提供開發環境、角色設定、Reviewer A＋B、只開 A、只開 B 或 Reviewer B OCR；點選後立即完成該項設定。"
 policy:
   allow_implicit_invocation: false
