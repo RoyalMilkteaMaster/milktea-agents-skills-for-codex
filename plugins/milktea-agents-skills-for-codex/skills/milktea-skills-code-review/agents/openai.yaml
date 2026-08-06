@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea Skills Code Review"
-  short_description: "供獨立 Reviewer 執行規格與工程雙軸證據審查"
-  default_prompt: "使用 $milktea-skills-code-review 獨立審查指定 Ticket 的固定 Diff。"
+  short_description: "依指定 Spec 或 Standards 軸審查固定 Diff"
+  default_prompt: "使用 $milktea-skills-code-review 依 Coordinator 指定的 review_axis 獨立審查固定 Diff。"
 policy:
   allow_implicit_invocation: false

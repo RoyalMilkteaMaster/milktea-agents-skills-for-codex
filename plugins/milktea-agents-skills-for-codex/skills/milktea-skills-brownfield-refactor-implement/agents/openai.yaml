@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea Skills Brownfield Refactor Implement"
-  short_description: "最大安全並行重構並派發啟用 Reviewer"
-  default_prompt: "使用 $milktea-skills-brownfield-refactor-implement 以最大安全並行執行已核准的 Brownfield 重構 Tickets，依目前 reviewer_mode 派發 Reviewer。"
+  short_description: "依 Ticket 模型安全重構並執行雙軸定向複驗"
+  default_prompt: "使用 $milktea-skills-brownfield-refactor-implement 依 Ticket 模型配置執行已核准重構，分派 Spec／Standards Reviewer 並確認原有功能。"
 policy:
   allow_implicit_invocation: false

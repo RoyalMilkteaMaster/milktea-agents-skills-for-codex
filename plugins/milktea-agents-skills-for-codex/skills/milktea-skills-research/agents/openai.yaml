@@ -1,0 +1,6 @@
+interface:
+  display_name: "Milktea Skills Research"
+  short_description: "委派第一手來源研究並保存單一引用文件"
+  default_prompt: "使用 $milktea-skills-research 把這個問題交給背景 Agent，依第一手來源查證並保存一份附引用的 Markdown。"
+policy:
+  allow_implicit_invocation: true

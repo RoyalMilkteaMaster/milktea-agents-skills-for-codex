@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea Skills To Ticket"
-  short_description: "把核准規格拆成具安全並行與所有權的本機 Tickets"
-  default_prompt: "使用 $milktea-skills-to-ticket 將已核准規格拆成具依賴、寫入所有權與驗收證據的 Tickets。"
+  short_description: "拆分含模型路由、安全並行與驗收分層的 Tickets"
+  default_prompt: "使用 $milktea-skills-to-ticket 將核准規格拆成含 Developer 模型路由、寫入所有權與分層驗收的 Tickets。"
 policy:
   allow_implicit_invocation: true
