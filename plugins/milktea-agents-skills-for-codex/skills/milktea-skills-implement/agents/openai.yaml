@@ -1,6 +1,6 @@
 interface:
-  display_name: "Milktea Skills Implement"
-  short_description: "依 Ticket 模型派工並執行雙軸 Review 與定向複驗"
-  default_prompt: "使用 $milktea-skills-implement 依 Ticket 模型配置執行已核准工作，分派 Spec／Standards Reviewer 並完成證據共識。"
+  display_name: "Milktea 功能實作"
+  short_description: "完成全部 Tickets 與總驗收後產生功能驗收報告"
+  default_prompt: "使用 $milktea-skills-implement 執行已核准工作，完成全部 Tickets、Review、修正與最終總驗收後，產生專屬的 HTML 功能完成驗收報告。"
 policy:
   allow_implicit_invocation: false

@@ -1,6 +1,6 @@
 interface:
-  display_name: "Milktea Skills Improve Codebase Architecture"
-  short_description: "在 Brownfield 規劃前產生唯讀 HTML 架構報告"
-  default_prompt: "使用 $milktea-skills-improve-codebase-architecture 在產生 Spec 與 Tickets 前唯讀健檢目前程式庫，並回傳 HTML 報告與決策候選。"
+  display_name: "Milktea 既有系統架構盤點"
+  short_description: "在重構規劃前完成唯讀架構盤點與證據整理"
+  default_prompt: "使用 $milktea-skills-improve-codebase-architecture 在產生 HTML、Spec 與 Tickets 前唯讀健檢目前程式庫，並把盤點證據與決策候選交回 Planner。"
 policy:
   allow_implicit_invocation: false

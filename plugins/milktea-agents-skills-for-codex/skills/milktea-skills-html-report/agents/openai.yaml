@@ -1,0 +1,4 @@
+interface:
+  display_name: "Milktea HTML 報告"
+  short_description: "依四種固定呼叫者產生不同的繁中 HTML 報告"
+  default_prompt: "使用 $milktea-skills-html-report，依呼叫者識別、觸發階段及既有證據產生對應的繁體中文 HTML 報告。"
