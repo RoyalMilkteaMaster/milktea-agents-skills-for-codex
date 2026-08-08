@@ -252,6 +252,17 @@ $milktea-skills-grill-me
 Plugin 安裝後，即可在該環境的所有專案使用，並完整保留工作流需要的相依 Skills。
 
 
+## 更新/升級 milktea-agents-skills
+
+如果您已經下載過 milktea-agents-skills，只要對環境進行 skills 更新，可以直接複製以下指令(windows/linux 通用)
+
+```text
+codex plugin marketplace upgrade milktea-agents-skills-for-codex
+codex plugin list
+```
+
+
+
 ## 多 Agent 協作（推薦）
 
 Milktea Skills 支援 多方 Agent 協作。  
