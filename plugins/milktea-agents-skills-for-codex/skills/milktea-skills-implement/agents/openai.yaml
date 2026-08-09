@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea 功能實作"
-  short_description: "完成全部 Tickets 與總驗收後產生功能驗收報告"
-  default_prompt: "使用 $milktea-skills-implement 執行已核准工作，完成全部 Tickets、Review、修正與最終總驗收後，產生專屬的 HTML 功能完成驗收報告。"
+  short_description: "提供即時進度，完成瀏覽器驗收後才產生結案報告"
+  default_prompt: "使用 $milktea-skills-implement 執行已核准工作，以 Ticket 提供 SSE 非同步繁體中文進度，完成全部 Tickets、Review、修正、原生瀏覽器操作與最終總驗收後，才產生不可覆寫的結案報告。"
 policy:
   allow_implicit_invocation: false

@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea 既有系統重構實作"
-  short_description: "完成重構與相容性總驗收後產生重構驗收報告"
-  default_prompt: "使用 $milktea-skills-brownfield-refactor-implement 執行已核准重構，完成全部 Tickets、Review、原有功能確認與最終總驗收後，產生專屬的 HTML 重構完成與相容性驗收報告。"
+  short_description: "提供即時進度，完成相容性與瀏覽器驗收後才結案"
+  default_prompt: "使用 $milktea-skills-brownfield-refactor-implement 執行已核准重構，以 Ticket 提供 SSE 非同步繁體中文進度，完成全部 Tickets、Review、原有功能、原生瀏覽器操作與最終總驗收後，才產生不可覆寫的結案報告。"
 policy:
   allow_implicit_invocation: false

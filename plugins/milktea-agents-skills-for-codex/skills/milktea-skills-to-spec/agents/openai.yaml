@@ -1,6 +1,6 @@
 interface:
-  display_name: "Milktea Skills To Spec"
-  short_description: "將核准需求與架構固定寫成本機中文規格"
-  default_prompt: "使用 $milktea-skills-to-spec 將已核准的需求與架構整理成中文規格。"
+  display_name: "Milktea 規格整理"
+  short_description: "將核准需求與架構寫入唯一工作目錄"
+  default_prompt: "使用 $milktea-skills-to-spec，將已核准的需求與架構整理成繁體中文規格，保存唯一工作識別碼與顯示名稱。"
 policy:
   allow_implicit_invocation: true
