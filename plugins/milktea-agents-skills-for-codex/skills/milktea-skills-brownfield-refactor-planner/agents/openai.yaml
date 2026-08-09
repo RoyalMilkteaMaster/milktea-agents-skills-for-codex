@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea 既有系統重構規劃"
-  short_description: "先產生架構健檢決策報告，再由使用者決定是否重構"
-  default_prompt: "使用 $milktea-skills-brownfield-refactor-planner 盤點此既有專案，產生專屬的 HTML 架構健檢決策報告；等我看完並決定繼續後，才產生重構 Spec 與 Tickets。"
+  short_description: "先產生唯一架構健檢決策報告，再由使用者決定是否進行重構"
+  default_prompt: "使用 $milktea-skills-brownfield-refactor-planner 以唯一工作識別碼盤點此既有專案並產生 HTML 架構健檢報告；等我決定繼續後才產生重構 Spec、Tickets 與可手動貼到新 Task 的啟動文字。"
 policy:
   allow_implicit_invocation: false

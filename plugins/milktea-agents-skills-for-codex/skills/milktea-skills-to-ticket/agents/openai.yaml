@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea 規格拆票"
   short_description: "拆分包含模型路由、安全並行與驗收分層的 Tickets"
-  default_prompt: "使用 $milktea-skills-to-ticket，將核准規格拆成包含 Developer 模型路由、寫入所有權、阻擋裁決與分層驗收的 Tickets。"
+  default_prompt: "使用 $milktea-skills-to-ticket，依穩定 R-xxx 將核准規格拆成包含 Developer 預設偏好、後端回退、寫入所有權與精確驗收證據的 Tickets。"
 policy:
   allow_implicit_invocation: true

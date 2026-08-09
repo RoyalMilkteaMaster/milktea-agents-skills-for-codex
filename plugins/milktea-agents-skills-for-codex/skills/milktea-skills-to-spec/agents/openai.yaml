@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea 規格整理"
-  short_description: "將核准需求與架構寫入唯一工作目錄"
-  default_prompt: "使用 $milktea-skills-to-spec，將已核准的需求與架構整理成繁體中文規格，保存唯一工作識別碼與顯示名稱。"
+  short_description: "將核准需求與架構整理成含穩定需求編號及核准狀態的本機規格"
+  default_prompt: "使用 $milktea-skills-to-spec，將已核准的需求與架構整理成含穩定 R-xxx 的繁體中文規格，先保存為草稿並在我核准後更新狀態。"
 policy:
   allow_implicit_invocation: true
