@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea 需求規劃與拆票"
-  short_description: "完成需求、架構、規格與拆票，產生可核准的實作藍圖報告"
-  default_prompt: "使用 $milktea-skills-grill-me 完成需求、架構、本機規格與 Tickets，產生 HTML 實作藍圖核准報告，經我核准後交付可手動貼到新 Task 的啟動文字。"
+  short_description: "快速選擇精簡或完整規劃，完成需求、規格與 Tickets 交接"
+  default_prompt: "使用 $milktea-skills-grill-me 選擇精簡或完整規劃，完成需求、架構、Spec 與 Tickets 交接。"
 policy:
   allow_implicit_invocation: false

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Milktea HTML 報告"
-  short_description: "提供非同步進度頁與完成後才產生的繁體中文報告"
-  default_prompt: "使用 $milktea-skills-html-report，執行中只依 Ticket 提供 SSE 非同步進度頁；結案時依呼叫者、生命週期與實際證據產生繁體中文報告。"

@@ -1,7 +1,6 @@
 interface:
-  display_name: "Milktea Git Merge Conflict"
+  display_name: "Milktea Git 衝突處理"
   short_description: "依雙方修改意圖安全解決 Git 衝突並完成必要驗證"
   default_prompt: "使用 $milktea-skills-git-merge-conflict 依雙方意圖安全解決目前的 Git 衝突並驗證結果。"
-
 policy:
   allow_implicit_invocation: true

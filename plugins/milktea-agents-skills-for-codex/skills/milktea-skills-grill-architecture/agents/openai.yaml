@@ -1,6 +1,6 @@
 interface:
-  display_name: "Milktea Skills Grill Architecture"
-  short_description: "依需求與目錄偏好確認三根目錄、資料流、模組、介面與測試接縫"
-  default_prompt: "使用 $milktea-skills-grill-architecture 依已確認需求與我的專案結構偏好逐一確認架構。"
+  display_name: "Milktea 架構確認"
+  short_description: "依核准需求確認資料流、模組、介面、相容性與測試接縫"
+  default_prompt: "使用 $milktea-skills-grill-architecture 依已核准需求與專案結構偏好逐一確認架構。"
 policy:
   allow_implicit_invocation: true

@@ -1,5 +1,5 @@
 interface:
-  display_name: "Milktea Skills Check Feasibility"
+  display_name: "Milktea 可行性評估"
   short_description: "獨立評估方案的技術、成本、時間、風險與成功機率區間"
   default_prompt: "使用 $milktea-skills-check-feasibility 獨立評估這項方案的可行性。"
 policy:

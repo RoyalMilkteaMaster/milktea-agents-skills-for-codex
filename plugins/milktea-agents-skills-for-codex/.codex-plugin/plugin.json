@@ -1,6 +1,6 @@
 {
   "name": "milktea-agents-skills-for-codex",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "給 Codex 使用的繁體中文 AI 開發協作 Skills。",
   "author": {
     "name": "Milktea"
@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Milktea Agents Skills for Codex",
     "shortDescription": "以繁體中文規劃、派工、實作與審查。",
-    "longDescription": "提供需求釐清、第一手來源研究、架構規劃、含模型路由的規格與 Ticket、既有專案重構、安全實作、TDD、Debug，以及 Spec／Standards 雙軸審查。",
+    "longDescription": "提供需求釐清、第一手來源研究、精簡或完整規劃、既有專案重構、安全並行實作、TDD、Debug、雙重獨立審查與驗收報告。",
     "developerName": "Milktea",
     "category": "Developer Tools",
     "capabilities": [],

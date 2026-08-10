@@ -1,6 +1,6 @@
 interface:
   display_name: "Milktea 既有系統架構盤點"
-  short_description: "在重構規劃前完成唯讀架構盤點與證據整理"
-  default_prompt: "使用 $milktea-skills-improve-codebase-architecture 在產生 HTML、Spec 與 Tickets 前唯讀健檢目前程式庫，並把盤點證據與決策候選交回 Planner。"
+  short_description: "唯讀盤點既有架構，產生精簡的繁體中文 HTML 決策報告"
+  default_prompt: "使用 $milktea-skills-improve-codebase-architecture 唯讀盤點目前程式庫並產生架構決策報告。"
 policy:
-  allow_implicit_invocation: false
+  allow_implicit_invocation: true
