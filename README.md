@@ -166,10 +166,7 @@ $milktea-skills-set-agent-roles
 
 1. 開發環境
 2. 角色設定
-3. Reviewer A ＋ B
-4. 只開 Reviewer A
-5. 只開 Reviewer B
-6. Reviewer B OCR
+3. Reviewer B OCR
 
 <details>
 <summary>可直接複製的用法</summary>
